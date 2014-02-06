@@ -1,6 +1,7 @@
+from flask import render_template
+
 from main import app
 
 @app.route('/')
-def hello():
-    """Return a friendly HTTP greeting."""
-    return 'Hello World!'
+def index():
+    return render_template("index.html")
